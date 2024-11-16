@@ -1,0 +1,705 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: rgba(27,27,40,255);
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(26,26,26,255);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items at the start (left) */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    gap: 1rem;  /* Added gap between logo, menu, and contact button */
+ 
+}
+
+.navbar .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar .logo-container img {
+    height: 90px; /* Adjust image height */
+}
+
+.navbar .logo {
+    font-size: 3rem;
+    display: flex;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* Navbar Links */
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: auto;  /* Pushes the nav links to the right */
+}
+
+.navbar .nav-links li {
+    margin: 0 1rem;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-btn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Ensures it looks like a button */
+    display: inline-block; /* Ensures block-like button behavior */
+    text-align: center;
+}
+
+.contact-btn:hover {
+    background-color: #66b3ff;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+ 
+.section1{
+    background-color: rgba(26,26,26,255);
+    height: 100vh;
+    width: 100%;
+    padding-top: 10vh;
+     
+}
+.section2{
+  
+ 
+    background-color: rgba(26,26,26,255);
+}
+ 
+ 
+ 
+ 
+.text h2, h1, p{
+    color: white;
+    
+}
+
+  .text{
+     
+      
+     margin-left: 8vw;
+  }
+  .text h2{
+     font-size: 3vw;
+     font-weight: 100;
+     font-family:monospace;
+     position: relative;
+     top: 15vh;
+
+  }
+.text h1{
+    margin-top: 14vh;
+    font-size: 4.5vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text p{
+    font-size: 3vw;
+    position: relative;
+ bottom: 1.5vw;
+}
+ .social-links{
+     
+   
+    margin-left: 8vw;
+    
+ }
+.social-links img {
+    width: 4vw;  /* Size of each social media icon */
+    height: 4vw;
+ margin-right: 5px;
+    transition: transform 0.3s ease;   
+}
+
+.social-links img:hover {
+    transform: scale(1.1);   
+}
+ 
+ 
+.portfolio_img img{
+    position: relative; 
+    height: 30vw;
+    left: 70vw;
+    bottom: 30vw;
+ 
+}
+#section2 {
+    margin-top: -10vw;
+   padding-top: 10vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+    background-color: rgba(26,26,26,255);
+}
+
+.content2 p, .content2_image {
+    opacity: 0;
+    transform: translateX(-200px);
+    animation: fadeInLeft 4s forwards;
+}
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+p {
+    text-align: justify;
+}
+.content2 h1, .content2 p {
+    color: white;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+.content2 h1 {
+    color: rgb(146, 11, 108);
+    font-size: 4vw;
+    position: relative;
+    right: 5vw;
+    margin-bottom: 1vw;
+}
+
+.content2_para {
+    position: relative;
+    font-size: 1.2vw;
+    right: 5vw;
+    max-width: 50vw;
+    
+}
+
+.highlight {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+.content2_image img {
+    position: relative;
+    height: 25vw;
+    transform: translateY(6%);
+    margin-right: 2vw;
+    margin-top: 8vw;
+    display: block;
+}
+.education {
+    width: 100%;
+    margin-top: -10vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vw;
+    background-color: rgba(26,26,26,255);
+ 
+}
+.education_image{
+   position: relative;
+   right:40vw;
+ }
+.education img{
+    height: 25vw;
+      padding-bottom:5vw ;
+}
+
+.education h1 {
+    font-size: 4vw;
+     position: relative;
+     padding-top: 10vw;
+     top: 4vw;
+    text-align: center;
+    
+    color: rgb(146, 11, 108);
+    
+
+}
+
+.bca, .ten, .twelve {
+    display: flex;
+    height: auto;
+    position: relative;
+    
+    margin-bottom: 1vw;
+    text-align: center;
+   
+}
+
+.bca p, .ten p, .twelve p {
+    font-size: 1.2vw;
+    color: white;
+    margin: 0.5vw;
+    position: relative;
+    right: 3.5vw;
+}
+.bca{
+    position: relative;
+    left: 4vw;
+}
+/* Ensure responsiveness and avoid overflow */
+.about_education {
+ position: relative;
+ bottom: 20vw;
+     padding: 5vw;
+    max-width: 90%;
+    font-size: 1.5vw;
+    line-height: 1.5;
+    color: white;
+}
+.about_study, .about_education,.education_image {
+    opacity: 0;
+    transform: translateX(-200px);
+    animation: fadeInLeft1 2s forwards;
+}
+
+@keyframes fadeInLeft1 {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+ 
+/* Hover Effects */
+
+
+.bca p:hover,
+.ten p:hover,
+.twelve p:hover {
+    transform: scale(1);
+    color: red;
+}
+
+.about_education > p:hover {
+    
+    transform: scale(1);
+}
+.about_study{
+text-align: center;
+align-content: center;
+   position: relative;
+   bottom: 18vw;
+   left: 4vw;
+}
+.project{
+    display: flex;
+
+}
+#section3{
+    margin-top: -10vw;
+    
+    background-color:rgba(26,26,26,255);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30vw;
+}
+.project img{
+     height: 12vw;
+    margin-bottom: 5vw;
+    border-radius: 3px;
+    margin-left: 20vw;
+}
+  
+.project p{
+     width: 30vw;
+    position: relative;
+ left: 2.5vw;
+font-size: 1vw;
+top: 3vw;
+}
+.project h2{
+  display: flex;
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color: orangered;
+   left: 45vw;
+   
+}
+.section3 h1{color:rgb(146, 11, 108);
+    padding-left: 45vw;
+    padding-bottom: 5vw;
+font-size: 3vw;
+}
+.project video ,  .project p , .project h2{
+     
+    transform: translateX(200px);
+    animation: fadeInLeft 2s forwards;
+}
+ 
+.contact_info p{
+     padding-top: 1vw;
+    font-size: 1vw;
+     
+}
+.contact_info h3{
+    color: rgb(146, 11, 108);
+    font-size: 2vw;
+}
+.contact_here{
+    margin-left: 5vw;
+}
+.contact_here h3{
+    color: rgb(146, 11, 108);
+    font-size: 2vw;
+    position: relative;
+    bottom: 37px;
+     
+}
+.name,.email,.message{
+    background-color: rgba(30,41,59,255);
+    border: 0;
+    color: white;
+    
+    padding:1vw ;
+    width: 40vw;
+    height: 1.9vw;
+    display: block;
+    margin-bottom: 0.8vw;
+    position: relative;
+    bottom: 1vw;
+}
+.buttonn {
+    background-color: rgba(30, 41, 52, 255);
+    color: white;
+    border: 0;
+    height: 2.5vw;
+    width: 6vw;
+    border-radius: 0.2rem;
+    margin-left: 17.5vw;
+    position: relative;
+  
+}
+
+.message {
+    background-color: rgba(30, 41, 59, 255);
+    border: 0;
+    color: white;
+    padding: 1vw;
+    width: 40vw;
+    height: 10vw; /* Adjusted height for better scaling */
+    display: block;
+    margin-bottom: 0.8vw;
+    position: relative;
+    bottom: 1vw;
+}
+
+.contact_info{
+   position: relative;
+   bottom: 2vw;
+    padding-left:6vw;
+}
+.contact_here{
+   position: relative;
+   bottom: 11vw;
+   padding-left:50vw ;
+}
+#section4{
+   height: fit-content;
+    padding-top: 10vw;
+    margin-top: -25vw;
+}
+ #section4 h1{
+    font-size: 4vw;
+    position: relative;
+ font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+     
+    justify-content: center;
+   
+    bottom: 4vw;
+ }
+ footer>h2{
+     font-size: 1vw;
+    color: whitesmoke;
+  position: relative;
+  bottom: 2vw;
+    display: flex;
+ 
+justify-content: center; 
+}
+ 
+@keyframes fadeInright {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+   
+    body {
+        overflow-x: hidden;
+    }
+    
+     
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .logo-container {
+        justify-content: center;
+    }
+
+    .navbar .logo-container img {
+        margin-right: 0;
+        height: 20px;
+    }
+
+    .navbar button {
+        justify-content: center;
+    }
+
+    /* Initially hide the nav links */
+    .navbar .nav-links {
+        display: none;
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        flex-direction: column;
+        transition: all 0.3s ease;  /* Smooth transition */
+    }
+
+    .navbar li {
+        margin: 1rem 0;
+    }
+
+    .navbar .contact-btn {
+        background-color: skyblue;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        margin-top: 1rem;  /* Stack below the menu */
+        border-radius: 5px;
+        width: 50%;
+        text-align: center;
+    }
+
+    /* Make the hamburger icon visible */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    /* On hover or focus of hamburger, show nav links */
+    .hamburger:hover + .nav-links,
+    .hamburger:focus + .nav-links/* Have to do research cause it is very complicated to creat hamburger without java script */
+     {
+        display: flex;  /* Show the navigation links */
+    }
+
+    /* Keep the nav-links visible on hover */
+    .nav-links:hover {
+        display: flex;  /* Ensure the menu stays visible when hovering over the links */
+    }
+
+    /* Add some padding to the nav items */
+    .nav-links li {
+        padding: 1rem 0;
+    }
+  
+    .portfolio_img{
+        position: relative;
+        bottom: 5vw;
+        right: 33.5vw;
+       }
+       .section1{
+        padding-top: 35vh;
+       }
+.content1{
+    position: relative;
+    top: 20vh;
+    
+    padding-left: 28vw;
+}
+.text h2{
+
+padding-left: 10vw;
+}
+.text h1{
+     padding-right:3vw;
+}
+.text p{
+    padding-left: 4vw;
+}
+.social-links{
+     padding-left: 4vw;
+}
+ 
+ .content2_para{
+    font-size: 1.8vw;
+ }
+ .content2_image img{
+    margin-top: 30vw;
+ }
+  
+ .education_image {
+    right: 20vw;
+    bottom: 13vw;
+    transform: scale(0.8); /* Scale down the image on smaller screens */
+} 
+
+.about_study {
+    left: 2vw; /* Slightly adjust positioning */
+      /* Prevent text overflow */
+}
+
+.education h1 {
+    font-size: 5vw;/* Responsive font size for smaller screens */
+    margin-bottom: 6vw;  
+ }
+
+.bca p, .ten p, .twelve p {
+    font-size: 2vw;
+}
+
+.about_education {
+    font-size: 2.5vw; /* Increase readability on smaller screens */
+    padding: 4vw;
+    max-width: 90%;
+    line-height: 1.4;
+}
+
+.education img {
+    height: 15vw; /* Keep the image within boundaries on smaller screens */
+    margin-right: 0;
+}
+.project video{
+    margin-bottom: 20vw;
+    position: relative;
+   
+     
+}
+ 
+.section3 h1 {
+    padding-left: 0;
+    text-align: center;
+    font-size: 5vw;
+    padding-bottom: 2vw;
+}
+
+.project {
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 5vw;
+}
+
+.project img {
+    height: 30vw;
+    margin-bottom: 2vw;
+    margin-left: 0;
+}
+
+.project h2 {
+    position: relative;
+    font-size: 4vw;
+    left: 0;
+    color: blue;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.project p {
+    width: 90%;
+    position: relative;
+    left: 0;
+    font-size: 3.5vw;
+    top: 1vw;
+    text-align: justify;
+}
+
+.section3 {
+    padding-bottom: 15vw;
+}
+.contact_info h3,
+.contact_here h3 {
+    font-size: 4vw;
+}
+
+.contact_info p {
+    font-size: 3.5vw;
+}
+
+/* Reduce input field widths and heights */
+.name,
+.email,
+.message {
+    width: 80vw;
+    height: 5vw;
+    font-size: 3.5vw;
+}
+
+/* Adjust button size */
+.buttonn {
+    width: 30vw;
+    height: 6vw;
+    margin-left: 25vw;
+}
+
+/* Adjust padding and layout positioning */
+.contact_info {
+    padding-left: 8vw;
+    bottom: 2vw;
+}
+
+.contact_here {
+    padding-left: 1vw;
+    bottom: 8vw;
+    padding-top: 15vw;
+}
+
+#section4 h1 {
+    font-size: 6vw;
+    right: 0;
+    bottom: 2vw;
+    text-align: center;
+}
+footer h2{
+    position: relative;
+    top: 1vw;
+    font-size: 2vw;
+    right: 3vw;
+    padding-bottom: 2vw;
+}
+ 
+
+}
